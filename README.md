@@ -9,8 +9,8 @@
   - [Settings in VS Code](#settings-in-vs-code)
   - [Generate SSH key pair](#generate-ssh-key-pair)
   - [GitHub repository](#github-repository)
-  - [Solve merge conflicts](#solve-merge-conflicts)
   - [Sync origin with upstream](#sync-origin-with-upstream)
+  - [Solve merge conflicts](#solve-merge-conflicts)
 
 ## Module description
 
@@ -119,20 +119,20 @@ In VS Code -> open a Terminal, then type:
 # Email must be the one provided on GitHub
 ssh-keygen -t ed25519 -C "your-email-on-github@example.com"
 ```
-This will generate two files with SSH-Keys on your computer (public & privat keys)  
+This will generate two files with SSH-Keys on your computer (public & privat key)  
 ```plaintext
 * Windows-Users look under: C:\Users\your-username\.ssh\id_ed25519.pub
 * Mac-Users look under: /Users/your-username/.ssh/id_ed25519.pub
 ```
 ```bash
-# To copy the ssh-key to clipboard
+# To copy the ssh-key to your clipboard
 Windows-Users (change your-username): 'type C:\Users\your-username\.ssh\id_ed25519.pub | clip'
 Mac-Users: 'pbcopy < ~/.ssh/id_ed25519.pub'
 ```
 
 **Note that .ssh is a hidden folder, so on Windows and macOS you first must make this folder visible to have access to the files with the ssh-keys**
 
-**To make the folder .shh visible**
+**To make the folder .ssh visible**
 ```plaintext
 --> Windows-Users: File Explorer -> View > Show > Hidden items (or in germ.: Anzeigen -> Einblenden -> Ausgeblendete Elemente)
 
@@ -140,7 +140,7 @@ Mac-Users: 'pbcopy < ~/.ssh/id_ed25519.pub'
   defaults write com.apple.Finder AppleShowAllFiles true 
   killall Finder
 
-  to hide again:
+  to hide again, type:
 
   defaults write com.apple.Finder AppleShowAllFiles false 
   killall Finder
@@ -196,6 +196,37 @@ git fetch upstream
 git pull upstream master
 ```
 
+## Sync origin with upstream
+
+To sync your fork (origin) and clone with the upstream repository you can use the following Git commands:
+
+```bash
+# Make sure the upstream has been added and the origin's url is set
+git remote -v
+
+# The output should look like (replace YOUR-USERNAME with your user name) ...
+# origin  git@github.com:YOUR-USERNAME/scientific_programming.git (fetch)
+# origin  git@github.com:YOUR-USERNAME/scientific_programming.git (push)
+# upstream        https://github.com/mario-gellrich-zhaw/scientific_programming.git (fetch)
+# upstream        https://github.com/mario-gellrich-zhaw/scientific_programming.git (push)
+
+# If this is not set correctly, type (replace YOUR-USERNAME with your user name on GitHub) ...
+git remote add upstream https://github.com/mario-gellrich-zhaw/scientific_programming.git
+git remote set-url origin git@github.com:YOUR-USERNAME/scientific_programming.git
+
+# Option (1): Sync your fork/clone to exactly match the upstream (your local changes will be overwritten)
+git fetch upstream
+git checkout master
+git reset --hard upstream/master
+git push origin master --force
+
+# Option (2): Sync your fork/clone with the upstream (your local changes are preserved but merge conflicts may have to be resolved)
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push origin master
+```
+
 ## Solve merge conflicts
 
 Later in the course you will modify the Python code provided on GitHub. When you modify Python code, merge conflicts may occur which is when two or more changes conflict with each other. This usually happens when multiple people are working on the same project and they try to merge their changes into a common codebase.
@@ -203,15 +234,3 @@ Later in the course you will modify the Python code provided on GitHub. When you
 In VS Code, you can use the Merge Editor to solve merge conflics.
 
 The following video explains how this works: https://www.youtube.com/watch?v=KuB6hYoLozw
-
-## Sync origin with upstream
-
-To sync your fork (origin) and clone with the upstream repository you can use the following Git commands:
-
-```bash
-git remote add upstream https://github.com/mario-gellrich-zhaw/scientific_programming.git
-git fetch upstream
-git checkout master
-git merge upstream/master
-git push origin master
-```

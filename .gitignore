@@ -36,7 +36,7 @@ dist/
 
 # Single files
 # solution_challenge_week_01.ipynb
-solution_challenge_week_02.ipynb
+# solution_challenge_week_02.ipynb
 graphics.R
 rstudio-export.zip
 solution_challenge_week_04.ipynb
@@ -56,7 +56,7 @@ app.py
 # Single folders
 # Week_01
 # Week_02
-Week_03
+# Week_03
 Week_04
 Week_05
 Week_06

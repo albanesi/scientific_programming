@@ -1,0 +1,29 @@
+Scientific Programming Challenge Week (03)
+
+Tasks (use Visual Studio Code to run the Docker container):
+
+1.) On Docker Hub look for a 'rocker/rstudio', image which is suitable for 
+    the linux/amd64 and linux/arm64 architecture.
+ 
+2.) Run the Docker container ...
+    docker run --rm -p 8888:8787 -e PASSWORD=rstudio rocker/rstudio
+    
+3.) Open RStudio in a web browser and run the following R-Code (copy/paste to the R-Console) ...
+    (Link: http://127.0.0.1:8888 with username = rstudio and the password = rstudio)
+    
+    #--------------------------------------------------------------------------
+    # R-Code for 2x2 multiplot based on data of Auckland's Maunga Whau Volcano
+    #--------------------------------------------------------------------------
+
+    options(warn=-1)
+
+    par(mfrow=c(2,2))
+    image(volcano, col=rainbow(100))
+    image(volcano, col=heat.colors(100))
+    image(volcano, col=terrain.colors(100))
+    image(volcano, col=gray.colors(100))
+
+4.) Use R, to create a 2x2 multiplot with a histogram, a boxplot, a barchart and a piechart
+    You can use arbitrary data, for examples see: https://www.tutorialspoint.com/r/
+
+5.) Save the resulting plots as separate .png Files on you local computer

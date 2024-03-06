@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+
+  jupyter:
+    container_name: c01
+    build:
+        context: .
+        dockerfile: Dockerfile
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    volumes:
+      - jupyter:/home/jovyan/work
+    ports:
+      - "8888:8888"
+    command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
+  
+  db:
+    container_name: c02
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  jupyter:
+  pgdata:
