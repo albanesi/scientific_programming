@@ -1,0 +1,16 @@
+#----------------------------------------------------------------------
+# Input & Output in Python
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'input_and_output_Python.ipynb' step by step.
+	
+2.) Use ChatGPT / Copilot to create own examples for the following file formats, 
+    and try to read and write these files using Python:
+	- CSV
+	- TXT
+	- JSON
+	- XML
+	- HTML
+	- ZIP
+	- XLSX
+	- Image files (e.g. JPEG)

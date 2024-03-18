@@ -45,7 +45,7 @@ docker images
 # In your Jupyter notebook in a web browser ...
 #-------------------------------------------------------------------------------
 
-# Drag and drop the two files to your Jupyter notebook
+# You should see the following two files which where added using the 'ADD' command
 - jupyter_postgres_db.ipynb
 - apartments_data_prepared.csv
 

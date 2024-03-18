@@ -1,0 +1,23 @@
+#----------------------------------------------------------------------
+# autoscout24.ch data
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'autoscout24_data.ipynb' step by step.
+	
+2.) From 'Init_Regist' extract the year of manufacture
+    Hint: you can use the following command (note that 'df' is the name of the data frame)
+	
+	df['year'] = df['Init_Regist'].str.split('.').str[1].astype('Int32')
+
+3.) Calculate a new variable 'age_of_car' by using the current date
+    Hint: you can use the following commands:
+	
+	import datetime
+	today = datetime.date.today()
+	year = today.year
+    df['age_of_car'] = year - df_orig['year']
+
+4.) Create a histogram and a boxplot to show the age of cars in the data set.
+
+5.) Create a dictionary with all prices per year in df['year']
+	

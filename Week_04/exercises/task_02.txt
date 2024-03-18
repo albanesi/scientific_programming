@@ -1,0 +1,11 @@
+#------------------------------------------------------------------------
+# PDF-file with formatted text
+#------------------------------------------------------------------------
+
+Task: 
+
+Create a formatted PDF-file by using Pythons 'reportlab' library. 
+Use the file 'pdf_info_letter.py' in the Materials for exercises folder
+as starting point. Also include date formats in the PDF text.
+
+Ask ChatGPT/Copilot for help (e.g. text, images).

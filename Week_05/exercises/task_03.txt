@@ -1,0 +1,26 @@
+#----------------------------------------------------------------------
+# Web Scraping vehicle data from autoscout24.ch
+#----------------------------------------------------------------------
+
+1.) Install the free 'Web Scraper' extension in Google Chrome
+	(search in Google Web Store for 'Web Scraper Chrome')
+
+2.) Look at the intro video tutorials on:
+    https://www.youtube.com/watch?v=n7fob_XVsbY&t=7s
+
+3.) Use the the web scraper to scrape vehicle data from autoscout24.ch
+   (All steps are explained in detail in class)
+
+4.) Those who cannot attent the class can import the 'webscraper_sitemap.json'
+    provided in this folder. Then follow the steps below:
+
+    -> Web Scraper menu -> Create new sitemap -> Import sitemap
+	   (copy/paste the content of 'webscraper_sitemap.json') 
+    Then:
+	-> Web Scraper menu -> Sitemaps (click on you sitemap's name)
+	Then:
+	-> Web Scraper menu -> Sitemap autoscout24 -> Scrape -> Start Scraping
+	Then: 
+	-> Click on the refresh button
+	Then:
+	-> Web Scraper menu -> Sitemap autoscout24 -> Export data

@@ -1,0 +1,21 @@
+#----------------------------------------------------------------------
+# Data types and built-in data structures in Python
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'data_types_and_built-in_data_structures_Python.ipynb' 
+    step by step. Also read the explanations related to data types and built-in 
+	data structures.
+	
+2.) Use ChatGPT 3.5 / Copilot and the Python library faker to create a data frame with car brands and types.
+    The data must include the following data types:
+    - str
+	- int
+	- float
+	- bool
+	
+3.) Use ChatGPT 3.5 / Copilot to create examples of the following built-in data structures in Python based on pet species:
+    - list
+	- tuple
+	- dictionary
+	- set
+	

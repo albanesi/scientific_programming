@@ -1,0 +1,22 @@
+#----------------------------------------------------------------------
+# SQLite database
+#----------------------------------------------------------------------
+
+Tasks:
+
+Use ChatGPT / Copilot and the Python library 'faker' to generate two tables
+with data including primary keys & foreign keys which can be used to join the 
+tables. Examples are:
+
+Authors & Books (key: AuthorId)
+Students & Courses (key: StudentId)
+Employees & Departments (key: DepartmentId)
+Products & Sales (key: ProductId)
+Users & UserRoles (key: UserId)
+Teams & Matches (key: TeamId)
+Artists & Albums (key: ArtistId)
+Doctors & Appointments (key: DoctorId)
+Cities & WeatherData (key: CityId)
+Manufacturers & Products (key: ManufacturerId)
+
+Store the data in a SQLite data base and use SQL queries to query the data.
