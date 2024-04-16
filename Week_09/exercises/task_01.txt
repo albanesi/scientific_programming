@@ -1,0 +1,46 @@
+#----------------------------------------------------------------------
+# Cellular Automata: Conway's Game of Life
+#----------------------------------------------------------------------
+
+Note that these exercises must be accomplished on your local computer!
+
+1.) Run the Jupyter notebook 'cellular_automata_conways_game_of_life.ipynb' step by step.
+
+2.) Remember that Conway's original 'B2S23' rules are:
+    - Any live cell with fewer than two live neighbours dies.
+    - Any live cell with more than three live neighbours dies.
+    - Any live cell with two or three live neighbours lives, unchanged, to the next generation.
+    - Any dead cell with exactly three live neighbours will come to life.
+
+    Run the Game of Life by using alternative rules such as:
+    g = LLCA(C0, rule = "B2S120")
+    g = LLCA(C0, rule = "B2S130")
+    g = LLCA(C0, rule = "B1S1305")
+    g = LLCA(C0, rule = "B3678S34678")
+    g = LLCA(C0, rule = "B0123478S01234678") # black/white reversal
+
+    In addition, try to find your own rules.
+
+3.) Export the result as a text file by using the following Python code:
+
+    import numpy as np
+
+    # Run the simulation
+    N = 50
+    t = np.linspace(0., 1., N+1)
+    X, Y = np.meshgrid(t, t)
+    f = 4
+    C0 = np.sin(2. * np.pi * f * X ) * np.sin(2. * np.pi * 2 * f * Y ) > -.1
+    g = LLCA(C0, rule = "B2S23")
+
+    # Run defined number of iterations
+    for i in range(100):
+        g.iterate()
+
+    # Plot graphic
+    fig, ax = plt.subplots(figsize=(6,6))
+    ax.axis('on')
+    im = plt.imshow(g.C, interpolation = "nearest", cmap = cm.binary)
+
+    # Export the numpy array
+    np.savetxt('game_of_life.txt', g.C, fmt='%d')

@@ -1,0 +1,13 @@
+#----------------------------------------------------------------------
+# Web application with plotly & dash
+#----------------------------------------------------------------------
+
+1.) In the plotly_dash_examples folder, run the .py files 'app_01.py' ... 'app_04.py' 
+    one after another. To run the Python scripts, type e.g.: python app_01.py in your 
+    Terminal.
+
+2.) In the app_03.py example, change the text in the input field. Look at the Python
+    code and try to understand which part of the code is responsible for the layout
+    and updates shown on this simple web site.
+
+3.) In the app_04.py example, change the filters and settings and see what happens.

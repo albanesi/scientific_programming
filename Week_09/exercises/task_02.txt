@@ -1,0 +1,18 @@
+#----------------------------------------------------------------------
+# Agent-based modeling: Money Agents Model
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'agent_based_modeling_money_agents.ipynb' step by step.
+
+2.) The Gini coefficient measures the extent to which the distribution of income 
+    or consumption among individuals or households within an economy deviates 
+    from a perfectly equal distribution. A Gini coefficient of 0 represents perfect 
+    equality, while a Gini coefficient of 1 implies perfect inequality. Equality 
+    is related to the well-being of the population, i.e. in a society in which
+    incomes are more equal, people are generelly happier.
+
+    Create different model simulations to answer the question which model 
+    parameters lead to high and which lead to a low inequlity.
+
+3.) Can you find model parameters which increases the Gini coefficient to a 
+    value >= 0.8 indicating very low level of inequlity?

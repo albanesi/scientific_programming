@@ -1,0 +1,22 @@
+#----------------------------------------------------------------------
+# Conditional statements, loops & loop control statements
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'conditional_statements_loops_Python.ipynb' step by step.
+
+2.) In the Jupyter notebook section 'Practical examples using the cars data set'
+    define e new variable with the following price categories:
+    - cheap (with prices < 25000)
+    - normal (with prices >= 25000 & prices < 45000)
+    - expensive (with prices >= 45000)
+
+3.) In the Jupyter notebook section 'Practical examples using OpenStreetMap data'
+    extract the following information from shops (if available) and write it to
+    a data frame:
+    - addr:city
+    - addr:country
+    - addr:housenumber
+    - addr:postcode
+    - addr:street
+
+    Note that not all data sets contain address information (see shops.geojson)

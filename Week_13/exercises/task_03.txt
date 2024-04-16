@@ -1,0 +1,27 @@
+#----------------------------------------------------------------------
+# Classification model example with Pythoj and flask
+#----------------------------------------------------------------------
+
+1.) In the folder 'flask_classification_model_example', run the Jupyter notebook 'model.ipynb'.
+    This generates a classification model based on the Iris data and stores it in .pkl format.
+
+2.) In the folder 'flask_classification_model_example' run the Python script app.py. 
+    Open the URL shown in the Terminal: http://127.0.0.1:8080. To make model 
+    predictions, provide values for a single Iris flower, e.g.: 
+    sepal.length  -> 2
+    sepal.width   -> 3
+    petal.length  -> 4
+    petal.width   -> 6
+
+3.) Look at the file structure of this application and try to understand which 
+    files are responsible for which part of the web application.
+    
+    After completing these exercises, you should understand:
+    - how to create and evaluate a classification model
+    - how a knn (k-nearest neighbor) model works
+    - how to save a model using the pickle (.pkl) format 
+    - how to load a model using the (.pkl) format 
+    - the role of a label encoder in a classification model
+    - the role of html-templates in flask applications
+    - how app routing works in flask (see @app.route in the Python code)
+

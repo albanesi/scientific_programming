@@ -1,0 +1,16 @@
+#-------------------------------------------------------------------
+# Scientific Programming Challenge Week (12)
+#-------------------------------------------------------------------
+
+Background: 
+Remember last week's challenge with the hydrological data of the river Thur. 
+The hydro data were collected by means of a web scraper 'water_level_data.py'
+Now, you want to display the data using a web application showing a bar chart 
+with the drain in m3/s and a line chart with the water level in cm. The web 
+application should be built in a way that the data and graphic are updated 
+every 10 seconds.
+
+Hint: The following files are needed:
+- app.py
+- index.html
+- water_level_data.py

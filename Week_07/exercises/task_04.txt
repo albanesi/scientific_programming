@@ -1,0 +1,12 @@
+#----------------------------------------------------------------------
+# Procedural programming: Optical character recognition (OCR) example
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'tesseract_ocr_example.ipynb' step by step.
+
+2.) Use the Jupyter notebook to extract text from another receipt (in German). 
+    You can find receipts using Google image search. Save the extracted text to a file.
+
+3.) Change the Jupyter notebook to extract text from an English receipt. 
+    Note that you must change the lang='deu' parameter to lang='eng' in all 
+    functions where this parameter is listed. Save the extracted text to a file.

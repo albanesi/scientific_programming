@@ -1,0 +1,30 @@
+#--------------------------------------------------------------------------
+# Agent-based modeling: Forest Fire, Schelling Segregation, Swarm Behavior
+#--------------------------------------------------------------------------
+
+Note that these exercises must be accomplished on your local computer!
+
+1.) In Python, different libraries can be used to build agent-based models. 
+    Example libraries are 'mesa' and 'agentpy'. The exercises contain
+    the following simulation models:
+    - Forest Fire Simulation (mesa)
+    - Schelling's Segregation Model (mesa)
+    - Boids Flocking Model: Simulation of Swarm Behavior (agentpy)
+
+    Look at the code of these models in the respective folders.
+
+2.) To run the Forest Fire Simulation, cd into the 'forest_fire_simulation'
+    folder and type: mesa runserver. A browser window will open in which you
+    will find a menu with: Start, Step and Reset. Create different simulations 
+    with varying tree densities. After model run, close the terminal window.
+
+3.) To run Schelling's Segregation Model, cd into the 'schelling_segregation'
+    folder and type: mesa runserver. A browser window will open in which you
+    will find a menu with: Start, Step and Reset. Create different simulations 
+    with varying agent density, fraction minority and homophily. After model 
+    run, close the terminal window.
+    
+4.) To run Boids Flocking Model, open the Jupyter notebook 'swarm_behavior.ipynb'.
+    Note that this model requires the 'agentpy' library. In the section 
+    'Parameter settings for 3D simulation', change the parameters to create 
+    different simulations.

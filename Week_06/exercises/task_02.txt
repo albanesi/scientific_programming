@@ -1,0 +1,40 @@
+#----------------------------------------------------------------------
+# Simulating the Monty Hall problem with Python
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'simulation_monty_hall_problem.ipynb' step by step.
+
+2.) In the Jupyter notebook, create a new section 'Proportion of wins in 
+    relation to the number of trials'. In this section, create a line chart
+    which shows the proportion of wins on the vertical axis and the number of 
+    trials on the horizontal axis. For this, you can use the following code:
+
+    # Create list to store number of trials using range(from, to, step width)
+    list_iter = range(1, 100, 1)
+
+    # Create list to store the proportion of wins
+    list_wins = []
+
+    # Foor loop
+    for i in list_iter:
+        
+        # Simulations with switch = True and 3 doors
+        list_wins.append(run_trials(i, True, ndoors=3) / i)
+
+    # Show wins
+    list_wins
+
+    # Graphic
+    plt.plot(list_iter, list_wins, color = 'green')
+    plt.axhline(y = 0.66, color = 'gray', linestyle = '--')
+    plt.title('Proportion of wins in relation to the number of trials')
+    plt.xlabel('Number of trials')
+    plt.ylabel('Wins (%)')
+    plt.ylim([0, 1])
+    plt.grid(linestyle='-', linewidth=0.1)
+    plt.show()
+
+3.) In the line chart above, change the number of trials to 5000 and the 
+    step width to 5. Based on the line chart, answer the question, whether it 
+    would make sense to change your initially choosen door after the gameshow 
+    host reveals a goat behind one of the unchosen doors.

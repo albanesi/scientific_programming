@@ -1,0 +1,11 @@
+#----------------------------------------------------------------------
+# Procedural programming: Excel - password hacking example
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'password_hack.ipynb' step by step.
+
+2.) Create an Excel file and protect it with a password.
+
+3.) Create a short password list 'passwords.txt' containing some words including your password.
+
+4.) Guess your own password based on the short password list.

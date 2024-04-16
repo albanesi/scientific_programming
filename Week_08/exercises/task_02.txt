@@ -1,0 +1,19 @@
+#----------------------------------------------------------------------
+# OOP examples with Python: Reinforcement learning
+#----------------------------------------------------------------------
+
+1.) Run the Jupyter notebook 'reinforcement_learning.ipynb' step 
+    by step and try to understand what the Python code does.
+
+3.) In this agent-based model example, we have two different classes:
+
+    - State class
+    - Agent class
+
+    The core element of this simulation is how agents learn to find the optimal path
+    in a grid environment to earn as much rewards as possible. This is explained in detail here:
+    https://towardsdatascience.com/reinforcement-learning-implement-grid-world-from-scratch-c5963765ebff
+    
+
+2.) Change the model parameters in the Jupyter notebook. Look at how 
+    the results of the model change depending on the parameter settings.

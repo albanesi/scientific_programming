@@ -38,3 +38,4 @@ bokeh==3.3.4
 paramiko==3.4.0
 flask_wtf==1.2.1
 Faker==23.1.0
+xlwings==0.31.1

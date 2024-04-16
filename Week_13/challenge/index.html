@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hydro data river Thur</title>
+    <script>
+      setTimeout(function(){
+          location.reload();
+      }, 10000); // Refresh every 10 seconds
+    </script>
+  </head>
+  <body>
+    <h3>Hydrological data river Thur</h3>
+    <div>
+      <h2></h2>
+      {% if bar_plot %}
+        <img src="data:image/png;base64,{{ bar_plot }}" alt="Bar Chart", width="50%">
+      {% else %}
+        <p>No data available.</p>
+      {% endif %}
+    </div>
+    <div>
+      <h2></h2>
+      {% if bar_plot %}
+        <img src="data:image/png;base64,{{ line_plot }}" alt="Line Chart" width="50%">
+      {% else %}
+        <p>No data available.</p>
+      {% endif %}
+    </div>
+  </body>
+</html>

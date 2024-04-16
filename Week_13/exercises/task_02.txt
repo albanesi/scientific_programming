@@ -1,0 +1,17 @@
+#----------------------------------------------------------------------
+# Web application with flask and matplotlib
+#----------------------------------------------------------------------
+
+1.) In the flask_matplotlib_examples folder, run the Jupyter notebook 
+    'flask_matplotlib_example.ipynb'. 
+    Go to: http://127.0.0.1:5000/?mean=2800&stddev=280&obs=10000
+    Change the values for mean, stddev & obs in the URL and see what happens.
+
+2.) In the flask_matplotlib_examples folder, run the Jupyter notebook 
+    'flask_matplotlib_example_with_html_template.ipynb'. Provide & change input 
+    parameters and see what happens. 
+
+3.) Try to change the graphic type from histogram to boxplot. You can use e.g.:
+
+    fig, ax = plt.subplots(figsize=(6, 2))
+    ax.boxplot(data, vert=False)

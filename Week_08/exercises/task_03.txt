@@ -1,0 +1,18 @@
+#----------------------------------------------------------------------
+# OOP examples with Python: Animations
+#----------------------------------------------------------------------
+
+Note that these exercises must be accomplished on your local computer!
+
+1.) Run the Jupyter notebook 'turtle_race_OOP_example_Python.ipynb' step 
+    by step. In class, we will make a deep dive into this OOP example 
+    and discuss single code lines.
+
+2.) Use the Turtle race example and add additional turtles. Note that, currently, 
+    you must make changes the position of text and lenght of the finish-lines
+    by hand, if you add additional turtles.
+
+3.) Also look at the other OOP - example showing animations in 'bouncing_ball_
+    OOP_example_Python.ipynb'. In this example, classes are used to create objects 
+    with certain attributes such as the velocity and size of bouncing balls Try to 
+    change the parameters in this example and look how the results change.
